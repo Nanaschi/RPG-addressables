@@ -17,10 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 7fc48d32c2d09224a8df378d102c2ba9
   m_SerializeEntries:
-  - m_GUID: 5d9ba4e7d0964044ea54abe409d81dfd
-    m_Address: Assets/Content/RPG_inventory_icons/apple.png
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: 2f1eaeeaad36ee5469eff7ff158f37ba
     m_Address: Assets/Content/RPG_inventory_icons/armor.png
     m_ReadOnly: 0

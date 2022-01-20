@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Remote Assets_ContentUpdateGroupSchema
   m_EditorClassIdentifier: 
   m_Group: {fileID: 11400000, guid: d88d951b13b27904a85e62d3223955ff, type: 2}
-  m_StaticContent: 0
+  m_StaticContent: 1
