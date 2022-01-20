@@ -923,7 +923,9 @@ MonoBehaviour:
     Image: {fileID: 927372943}
   - NameAssetBundle: helmets
     Image: {fileID: 312334177}
-  _dataAudioBundles: []
+  _dataAudioBundles:
+  - NameAssetBundle: barradeen-the-girl-i-havent-met
+    AudioSource: {fileID: 1281636134}
   _loadAsssetsButton: {fileID: 450703050}
 --- !u!82 &1281636134
 AudioSource:
