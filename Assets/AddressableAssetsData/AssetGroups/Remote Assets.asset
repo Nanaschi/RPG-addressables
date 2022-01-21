@@ -16,12 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: b8af18a6cd59f4e4ca5ed66b9d6ee657
-  m_SerializeEntries:
-  - m_GUID: 3c2a35d2b7dc5e84795bec83b04d7b25
-    m_Address: Assets/Prefabs/Remote Boot.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Prefab
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 27ae59f907f8df14d9098890cad24675, type: 2}
   m_SchemaSet:

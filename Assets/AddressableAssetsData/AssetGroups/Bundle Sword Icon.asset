@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Bundle Sword Icon
+  m_EditorClassIdentifier: 
+  m_GroupName: Bundle Sword Icon
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 5aa855a229e821343a1d3b400bcd40e4
+  m_SerializeEntries:
+  - m_GUID: c3d4e735f312df5419d6a9dda48bbfd4
+    m_Address: Assets/Content/Bundle Sword Icon/Black
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Black
+  - m_GUID: 8cfa372c68c5a334897bd51c0d22373a
+    m_Address: Assets/Content/Bundle Sword Icon/Pink
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Pink
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 27ae59f907f8df14d9098890cad24675, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fca8a4f2866a87648802ae555165876f, type: 2}
+    - {fileID: 11400000, guid: 532692a39afcb8943b4ccaa3fb2a5ad5, type: 2}
