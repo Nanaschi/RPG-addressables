@@ -78,7 +78,7 @@ MonoBehaviour:
     ModelItem:
       Model: {fileID: 0}
       ModelReference:
-        m_AssetGUID: 68cfbb20182fe2e47b4dce4f59b0bf3e
+        m_AssetGUID: 6e5c272749465ce46896d2714189efa0
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
     ModelItem:
       Model: {fileID: 0}
       ModelReference:
-        m_AssetGUID: 7b7484d29b1393a498cdd5c9bd1f65f4
+        m_AssetGUID: b0680d0a5185185428591c3a9cd53d65
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
     ModelItem:
       Model: {fileID: 0}
       ModelReference:
-        m_AssetGUID: 50fcca5ba31db2a4e9f19e17a0aae412
+        m_AssetGUID: 43def2bd0468e7140a19a41706a17f9d
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0

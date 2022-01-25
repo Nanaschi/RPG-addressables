@@ -25,6 +25,18 @@ MonoBehaviour:
     m_Address: Assets/Scripts/Real Game Prototypes/SetOfTileItems.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 6e5c272749465ce46896d2714189efa0
+    m_Address: Assets/Prefabs/Cube 1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b0680d0a5185185428591c3a9cd53d65
+    m_Address: Assets/Prefabs/Cube 2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 43def2bd0468e7140a19a41706a17f9d
+    m_Address: Assets/Prefabs/Cube 3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 27ae59f907f8df14d9098890cad24675, type: 2}
   m_SchemaSet:

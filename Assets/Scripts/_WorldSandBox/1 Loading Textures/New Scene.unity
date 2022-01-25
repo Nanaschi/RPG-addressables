@@ -328,7 +328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c64ca03cb4d49cc42a944143b702a9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _testingIndex: 0
+  _testingIndexID: 0
+  _typeOfLoading: 1
   _setOfTileItems: {fileID: 11400000, guid: c68320bb587334f438250ce94517a82c, type: 2}
 --- !u!4 &1996389420
 Transform:

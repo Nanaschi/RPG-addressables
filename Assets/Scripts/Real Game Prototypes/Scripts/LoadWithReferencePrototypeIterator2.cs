@@ -1,20 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
-using Scripts.Gameplay.Tiles;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-public enum TypeOfLoading
+public enum TypeOfLoading2
 {
     Single,
     Multiple
 }
 
-public class LoadWithReferencePrototypeIterator : MonoBehaviour
+public class LoadWithReferencePrototypeIterator2 : MonoBehaviour
 {
     [Range(0, 100)][SerializeField] int _testingIndexID;
-    [SerializeField] private TypeOfLoading _typeOfLoading;
+    [SerializeField] private TypeOfLoading2 _typeOfLoading;
     AssetReference[] multipleReference;
     AssetReference singleReference;
     [SerializeField] private SetOfTileItems _setOfTileItems;
@@ -22,8 +21,8 @@ public class LoadWithReferencePrototypeIterator : MonoBehaviour
     // Start the load operation on start
     void Start()
     {
-       if (_typeOfLoading == TypeOfLoading.Single) StartOperationHandle();
-       if (_typeOfLoading == TypeOfLoading.Multiple) StartMultipleOperationHandle();
+       if (_typeOfLoading == TypeOfLoading2.Single) StartOperationHandle();
+       if (_typeOfLoading == TypeOfLoading2.Multiple) StartMultipleOperationHandle();
     }
 
     
@@ -33,16 +32,14 @@ public class LoadWithReferencePrototypeIterator : MonoBehaviour
     {
         for (int i = 0; i < _setOfTileItems.Items.Count; i++)
         {
-            AsyncOperationHandle<IList<GameObject>> loadWithIResourceLocations =
-                Addressables.LoadAssetsAsync<GameObject>(_setOfTileItems.Items[i].ModelItem.ModelReference,
-                    obj =>
-                    {
-                        //Gets called for every loaded asset
-                        Debug.Log(obj.name);
-                    });
+            singleReference = _setOfTileItems.Items[i].ModelItem.ModelReference;
+            AsyncOperationHandle handle = singleReference.LoadAssetAsync<GameObject>();
+            /*Addressables.LoadAssetsAsync()*/
+            handle.Completed += MultipleHandle_Completed;    
         }
     }
-
+    
+    
     private void MultipleHandle_Completed(AsyncOperationHandle obj) {
         if (obj.Status == AsyncOperationStatus.Succeeded) {
             Instantiate(singleReference.Asset, transform);
@@ -80,9 +77,8 @@ public class LoadWithReferencePrototypeIterator : MonoBehaviour
     }
 
 
-    /*
     // Release asset when parent object is destroyed
     private void OnDestroy() {
         singleReference.ReleaseAsset();
-    }*/
+    }
 }
