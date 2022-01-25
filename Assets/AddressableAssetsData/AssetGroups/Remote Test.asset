@@ -10,13 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Remote Asset
+  m_Name: Remote Test
   m_EditorClassIdentifier: 
-  m_GroupName: Packed Assets1
+  m_GroupName: Remote Test
   m_Data:
     m_SerializedData: []
   m_GUID: 720fe6b48cf8eb0458cefa6f7ff7f4f0
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: b827e62a3a5c0c747a8bdc4a0f29c30d
+    m_Address: Assets/Content/Bundle Sword Icon/Blue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Pink
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 27ae59f907f8df14d9098890cad24675, type: 2}
   m_SchemaSet:

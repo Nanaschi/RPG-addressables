@@ -18,15 +18,15 @@ MonoBehaviour:
   m_GUID: 5aa855a229e821343a1d3b400bcd40e4
   m_SerializeEntries:
   - m_GUID: c3d4e735f312df5419d6a9dda48bbfd4
-    m_Address: Assets/Content/Bundle Sword Icon/Black
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Black
-  - m_GUID: 8cfa372c68c5a334897bd51c0d22373a
-    m_Address: Assets/Content/Bundle Sword Icon/Pink
+    m_Address: Black
     m_ReadOnly: 0
     m_SerializedLabels:
     - Pink
+  - m_GUID: 8cfa372c68c5a334897bd51c0d22373a
+    m_Address: Pink
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Black
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 27ae59f907f8df14d9098890cad24675, type: 2}
   m_SchemaSet:

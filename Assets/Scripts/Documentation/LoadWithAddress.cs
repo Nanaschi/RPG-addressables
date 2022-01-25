@@ -19,7 +19,8 @@ namespace Documentation
         }
 
         // Instantiate the loaded prefab on complete
-        private void Handle_Completed(AsyncOperationHandle<GameObject> operation) {
+        private void Handle_Completed(AsyncOperationHandle<GameObject> operation)
+        {
             if (operation.Status == AsyncOperationStatus.Succeeded) {
                 Instantiate(operation.Result, transform);
             } else {

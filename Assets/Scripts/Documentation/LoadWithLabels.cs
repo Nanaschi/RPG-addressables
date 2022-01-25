@@ -7,7 +7,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 public class LoadWithLabels : MonoBehaviour
 {
     // Label strings to load
-    public List<string> keys = new List<string>() { "characters", "animals" };
+    public List<string> keys = new List<string>() { "Black", "Pink" };
 
     // Operation handle used to load and release assets
     AsyncOperationHandle<IList<GameObject>> loadHandle;

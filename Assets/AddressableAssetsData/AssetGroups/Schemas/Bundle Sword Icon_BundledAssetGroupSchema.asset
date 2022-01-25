@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Bundle Sword Icon_BundledAssetGroupSchema
   m_EditorClassIdentifier: 
   m_Group: {fileID: 11400000, guid: 85f821fb65a36eb40aa86da97b0b8361, type: 2}
-  m_InternalBundleIdMode: 1
+  m_InternalBundleIdMode: 2
   m_Compression: 1
   m_IncludeAddressInCatalog: 1
   m_IncludeGUIDInCatalog: 1
   m_IncludeLabelsInCatalog: 1
-  m_InternalIdNamingMode: 0
+  m_InternalIdNamingMode: 2
   m_CacheClearBehavior: 0
   m_IncludeInBuild: 1
   m_BundledAssetProviderType:
@@ -34,12 +34,12 @@ MonoBehaviour:
   m_RedirectLimit: -1
   m_RetryCount: 0
   m_BuildPath:
-    m_Id: 7963e4ca01f0a9841a6dc7b9b1ecfcf4
+    m_Id: 60716e450547d5b4d8b812912159f405
   m_LoadPath:
-    m_Id: 94818c9e7468ff64ca4c08527dfa2d7a
+    m_Id: 2de9aa791bfc99945a27d1c7c6feef2b
   m_BundleMode: 1
   m_AssetBundleProviderType:
     m_AssemblyName: Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_ClassName: UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider
-  m_BundleNaming: 0
+  m_BundleNaming: 2
   m_AssetLoadMode: 0

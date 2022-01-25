@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74e972025239cd74284c5005c49015c6, type: 3}
+  m_Name: SetOfTileItems
+  m_EditorClassIdentifier: 
+  Items:
+  - Id: 0
+    Title: 
+    PreviewTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    TGHTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    InteractiveMap:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    ModelItem:
+      Model: {fileID: 0}
+      ModelReference:
+        m_AssetGUID: e1ea7c2b48be24e41a4a3b4ce83ded70
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+      Scale: 0
+      Position: {x: 0, y: 0, z: 0}
+  - Id: 0
+    Title: 
+    PreviewTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    TGHTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    InteractiveMap:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    ModelItem:
+      Model: {fileID: 0}
+      ModelReference:
+        m_AssetGUID: 68cfbb20182fe2e47b4dce4f59b0bf3e
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+      Scale: 0
+      Position: {x: 0, y: 0, z: 0}
+  - Id: 0
+    Title: 
+    PreviewTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    TGHTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    InteractiveMap:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    ModelItem:
+      Model: {fileID: 0}
+      ModelReference:
+        m_AssetGUID: 7b7484d29b1393a498cdd5c9bd1f65f4
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+      Scale: 0
+      Position: {x: 0, y: 0, z: 0}
+  - Id: 0
+    Title: 
+    PreviewTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    TGHTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    InteractiveMap:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    ModelItem:
+      Model: {fileID: 0}
+      ModelReference:
+        m_AssetGUID: 50fcca5ba31db2a4e9f19e17a0aae412
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+      Scale: 0
+      Position: {x: 0, y: 0, z: 0}
