@@ -18,14 +18,24 @@ public class LoadWithReferencePrototypeIterator : MonoBehaviour
     AssetReference[] multipleReference;
     AssetReference singleReference;
     [SerializeField] private SetOfTileItems _setOfTileItems;
+    [SerializeField] private int timeToSelfDestruct;
+
+    private AsyncOperationHandle<IList<GameObject>> loadWithIResourceLocations;
+    private AsyncOperationHandle<GameObject> _asyncOperationHandle;
     
     // Start the load operation on start
     void Start()
     {
        if (_typeOfLoading == TypeOfLoading.Single) StartOperationHandle();
        if (_typeOfLoading == TypeOfLoading.Multiple) StartMultipleOperationHandle();
+       Invoke(nameof(SelfDestruction), 0);
+       
     }
 
+    private void SelfDestruction()
+    {
+        Destroy(gameObject, timeToSelfDestruct);
+    }
     
     
     
@@ -33,15 +43,31 @@ public class LoadWithReferencePrototypeIterator : MonoBehaviour
     {
         for (int i = 0; i < _setOfTileItems.Items.Count; i++)
         {
-            AsyncOperationHandle<IList<GameObject>> loadWithIResourceLocations =
-                Addressables.LoadAssetsAsync<GameObject>(_setOfTileItems.Items[i].ModelItem.ModelReference,
+            var modelReference = _setOfTileItems.Items[i].ModelItem.ModelReference; 
+            if (string.IsNullOrEmpty(modelReference.AssetGUID)) continue;
+            loadWithIResourceLocations =
+                Addressables.LoadAssetsAsync<GameObject>(modelReference,
                     obj =>
                     {
-                        //Gets called for every loaded asset
-                        Debug.Log(obj.name);
+                       
+                            //Gets called for every loaded asset
+                            Debug.Log(obj.name);
+                            /*_asyncOperationHandle = Addressables.LoadAssetAsync<GameObject>(modelReference);*/
+                            Addressables.InstantiateAsync(modelReference);
+
                     });
         }
+        
     }
+    
+    // Release asset when parent object is destroyed
+    private void OnDestroy() 
+    {
+        print(loadWithIResourceLocations);
+            Addressables.ReleaseInstance(loadWithIResourceLocations);
+
+    }  
+    
 
     private void MultipleHandle_Completed(AsyncOperationHandle obj) {
         if (obj.Status == AsyncOperationStatus.Succeeded) {
@@ -51,7 +77,8 @@ public class LoadWithReferencePrototypeIterator : MonoBehaviour
         }
     }
     
-    
+
+  
     
     
     
@@ -80,9 +107,4 @@ public class LoadWithReferencePrototypeIterator : MonoBehaviour
     }
 
 
-    /*
-    // Release asset when parent object is destroyed
-    private void OnDestroy() {
-        singleReference.ReleaseAsset();
-    }*/
 }
