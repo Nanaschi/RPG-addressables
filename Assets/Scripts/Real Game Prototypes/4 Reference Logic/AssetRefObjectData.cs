@@ -19,9 +19,15 @@ public class AssetRefObjectData : MonoBehaviour
         
         
      
-        var assetGuid =ConvertingGameObjectIntoReference.GetAddressFromPrefabTest(_setOfTileItems.Items[_index].ModelItem.Model);
+        var assetAddress =ConvertingGameObjectIntoReference.GetAddressFromPrefabTest(_setOfTileItems.Items[_index].ModelItem.Model);
         print( ConvertingGameObjectIntoReference.GetAddressFromPrefabTest(_setOfTileItems.Items[_index].ModelItem.Model));
 
+
+        _setOfTileItems.Items[_index].ModelItem.ModelReference
+            .SetEditorAsset(_setOfTileItems.Items[_index].ModelItem.Model);
+        /*Addressables.LoadAssetAsync<GameObject>(assetAddress).Completed += OnLoadDone;*/
+    
+        
 
 
 
@@ -43,5 +49,12 @@ public class AssetRefObjectData : MonoBehaviour
     private IEnumerator LoadAndWaitUntilComplete()
     {
         yield return AssetRefLoader.CreateAssetsAddToList(_references, _completedObj);
+    }
+    
+    
+    private void OnLoadDone(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<GameObject> obj)
+    {
+        // In a production environment, you should add exception handling to catch scenarios such as a null result.
+       
     }
 }
