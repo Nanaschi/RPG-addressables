@@ -5,15 +5,22 @@ using UnityEngine.AddressableAssets;
 
 public class AssetRefObjectData : MonoBehaviour
 {
-
-    [SerializeField] private AssetReference _sqrARef;
-    [SerializeField] private List<AssetReference> _references = new List<AssetReference>();
+    private List<AssetReference> _references = new List<AssetReference>();
     [SerializeField] private List<GameObject> _completedObj = new List<GameObject>();
-    
+    [SerializeField] private SetOfTileItems _setOfTileItems;
+    [SerializeField] private int _index;
+    [SerializeField] 
     private void Start()
     {
-        _references.Add(_sqrARef);
+        for (int i = 0; i < _setOfTileItems.Items.Count; i++)
+        {
+            if (string.IsNullOrEmpty(_setOfTileItems.Items[i].ModelItem.ModelReference.AssetGUID)) continue;
+
+            _references.Add(_setOfTileItems.Items[i].ModelItem.ModelReference);
+            
+        }
         StartCoroutine(LoadAndWaitUntilComplete());
+
     }
 
     private IEnumerator LoadAndWaitUntilComplete()

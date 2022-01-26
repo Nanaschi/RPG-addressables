@@ -6,7 +6,7 @@ using UnityEngine.AddressableAssets;
 [Serializable]
 public class ModelItem
 {
-    [HideInInspector] public GameObject Model;
+    public GameObject Model;
     public AssetReference ModelReference;
     public int Rotation;
     public float Scale = 1;
