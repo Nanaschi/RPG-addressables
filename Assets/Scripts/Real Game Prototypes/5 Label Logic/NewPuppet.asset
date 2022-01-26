@@ -40,45 +40,9 @@ MonoBehaviour:
         m_EditorAssetChanged: 0
       Rotation: 0
     ModelItem:
-      Model: {fileID: 0}
+      Model: {fileID: 7154899610612246161, guid: e1ea7c2b48be24e41a4a3b4ce83ded70, type: 3}
       ModelReference:
-        m_AssetGUID: e1ea7c2b48be24e41a4a3b4ce83ded70
-        m_SubObjectName: 
-        m_SubObjectType: 
-        m_EditorAssetChanged: 0
-      Rotation: 0
-      Scale: 0
-      Position: {x: 0, y: 0, z: 0}
-  - Id: 0
-    Title: 
-    PreviewTexture:
-      Texture: {fileID: 0}
-      AssetReferenceTexture2D:
         m_AssetGUID: 
-        m_SubObjectName: 
-        m_SubObjectType: 
-        m_EditorAssetChanged: 0
-      Rotation: 0
-    TGHTexture:
-      Texture: {fileID: 0}
-      AssetReferenceTexture2D:
-        m_AssetGUID: 
-        m_SubObjectName: 
-        m_SubObjectType: 
-        m_EditorAssetChanged: 0
-      Rotation: 0
-    InteractiveMap:
-      Texture: {fileID: 0}
-      AssetReferenceTexture2D:
-        m_AssetGUID: 
-        m_SubObjectName: 
-        m_SubObjectType: 
-        m_EditorAssetChanged: 0
-      Rotation: 0
-    ModelItem:
-      Model: {fileID: 0}
-      ModelReference:
-        m_AssetGUID: 6e5c272749465ce46896d2714189efa0
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0
@@ -150,7 +114,43 @@ MonoBehaviour:
     ModelItem:
       Model: {fileID: 0}
       ModelReference:
-        m_AssetGUID: 43def2bd0468e7140a19a41706a17f9d
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+      Scale: 0
+      Position: {x: 0, y: 0, z: 0}
+  - Id: 0
+    Title: 
+    PreviewTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    TGHTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    InteractiveMap:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      Rotation: 0
+    ModelItem:
+      Model: {fileID: 0}
+      ModelReference:
+        m_AssetGUID: 
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0
