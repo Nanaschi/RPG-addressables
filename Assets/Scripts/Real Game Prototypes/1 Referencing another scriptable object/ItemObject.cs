@@ -40,7 +40,8 @@ public class ItemObject : ScriptableObject
     public enum ItemType
     {
         Physical,
-        Magical
+        Magical,
+        Pickles
     }
 
     // Determines how to create an Item from each ItemType
@@ -54,6 +55,8 @@ public class ItemObject : ScriptableObject
 
             case ItemType.Magical:
                 return new MagicalItem();
+            case ItemType.Pickles:
+                return new Pickles();
         }
     }
 
@@ -76,6 +79,12 @@ public class ItemObject : ScriptableObject
     {
         [SerializeField] float materialHardness;
         public PhysicalItem() { typeDescription = "Physical"; materialHardness = 1f; }
+
+    }   
+    public class Pickles : Item
+    {
+        [SerializeField] float materialHardness;
+        public Pickles() { typeDescription = "Pipipi"; materialHardness = 2f; }
 
     }
 

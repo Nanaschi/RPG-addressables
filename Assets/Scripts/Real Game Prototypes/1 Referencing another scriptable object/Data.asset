@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319c8971d8ed86c428c0f6de7ee33bf7, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  type: 0
+  type: 2
   data:
     id: 0
   references:
     version: 1
     00000000:
-      type: {class: , ns: , asm: }
+      type: {class: ItemObject/Pickles, ns: , asm: Assembly-CSharp}
+      data:
+        typeDescription: Pipipi
+        materialHardness: 2

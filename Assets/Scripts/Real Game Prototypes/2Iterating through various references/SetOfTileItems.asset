@@ -42,7 +42,7 @@ MonoBehaviour:
     ModelItem:
       Model: {fileID: 0}
       ModelReference:
-        m_AssetGUID: b0680d0a5185185428591c3a9cd53d65
+        m_AssetGUID: 6e5c272749465ce46896d2714189efa0
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0
