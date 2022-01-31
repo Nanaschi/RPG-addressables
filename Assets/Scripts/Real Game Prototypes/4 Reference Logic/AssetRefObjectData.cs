@@ -31,16 +31,33 @@ public class AssetRefObjectData : MonoBehaviour
     {
         for (int i = 0; i < _setOfTileItems.Items.Count; i++)
         {
-            //TODOD here should be converting from gameobjects into assetReferences
-
-
-            if (string.IsNullOrEmpty(_setOfTileItems.Items[i].ModelItem.ModelReference.AssetGUID)) continue;
-
             _references.Add(_setOfTileItems.Items[i].ModelItem.ModelReference);
         }
 
         StartCoroutine(LoadAndWaitUntilComplete());
     }
+    private IEnumerator LoadAndWaitUntilComplete()
+    {
+        yield return AssetRefLoader.CreateAssetsAddToList(_references, _completedObj);
+    }
+    
+    
+    private IEnumerator LoadAndWaitUntilCompleteAlt()
+    {
+        yield return AssetRefLoader.LoadAssetsAddToList(_references, _completedObj); //_references and _completedObj should have something in common
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     private void ConvertGameobjectToAssetReference()
     {
@@ -75,10 +92,7 @@ public class AssetRefObjectData : MonoBehaviour
         return assetAddress;
     }
 
-    private IEnumerator LoadAndWaitUntilComplete()
-    {
-        yield return AssetRefLoader.CreateAssetsAddToList(_references, _completedObj);
-    }
+
     
     
     private void OnLoadDone(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<GameObject> obj)

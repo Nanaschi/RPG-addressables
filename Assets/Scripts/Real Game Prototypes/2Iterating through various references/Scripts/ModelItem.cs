@@ -19,6 +19,8 @@ public class ModelItem
     }
 
     [SerializeField] [FormerlySerializedAs("ModelReference")] private AssetReference _modelReference;
+
+    public AssetReference EmptyAssetReference { get; }
     public AssetReference ModelReference
     {
         get => _modelReference;
