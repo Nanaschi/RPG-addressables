@@ -27,6 +27,7 @@ public class AssetRefLoader
             if (!string.IsNullOrEmpty(reference.AssetGUID))
             {
                completedObjs.Add(await reference.LoadAssetAsync<T>().Task);
+               /*Object.Instantiate(reference.Asset);*/
             }
         }
     }    
@@ -46,7 +47,6 @@ public class AssetRefLoader
     private static T AddingGameObjectToAList<T>(T gameObjectToAdd, List<T> completedObjs) where T : Object
     {
        completedObjs.Add(gameObjectToAdd);
-       GameObject.Instantiate(gameObjectToAdd);
        return gameObjectToAdd;
     }
 }

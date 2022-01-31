@@ -25,7 +25,6 @@ public class AssetRefObjectData : MonoBehaviour
 
         if (_convertContentToReference) MultipleConvertGameobjectToAssetReference();
         if (_loadReference) LoadReference();
-        print("");
     }
 
     private void LoadReference()
@@ -35,11 +34,23 @@ public class AssetRefObjectData : MonoBehaviour
             _references.Add(_setOfTileItems.Items[i].ModelItem.ModelReference);
         }
 
-        StartCoroutine(LoadAndWaitUntilCompleteAlt());
+        StartCoroutine(LoadAndWaitUntilComplete());
+
+
+        foreach (var reference in _references)
+        {
+            for (int i = 0; i < _setOfTileItems.Items.Count; i++)
+            {
+                _setOfTileItems.Items[i].ModelItem.Model =  reference.editorAsset as GameObject;
+                Instantiate(_setOfTileItems.Items[i].ModelItem.Model);
+            }
+        }
+
+        
     }
     private IEnumerator LoadAndWaitUntilComplete()
     {
-        yield return AssetRefLoader.CreateAssetsAddToList(_references, _completedObj);
+        yield return AssetRefLoader.LoadAssetsAddToList(_references, _completedObj);
     }
     
     
