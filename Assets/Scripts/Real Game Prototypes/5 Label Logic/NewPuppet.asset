@@ -40,9 +40,9 @@ MonoBehaviour:
         m_EditorAssetChanged: 1
       Rotation: 0
     ModelItem:
-      Model: {fileID: 8621144769000116715, guid: 43def2bd0468e7140a19a41706a17f9d, type: 3}
-      ModelReference:
-        m_AssetGUID: e1ea7c2b48be24e41a4a3b4ce83ded70
+      _model: {fileID: 8621144769000116715, guid: 43def2bd0468e7140a19a41706a17f9d, type: 3}
+      _modelReference:
+        m_AssetGUID: 43def2bd0468e7140a19a41706a17f9d
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 1
@@ -76,8 +76,152 @@ MonoBehaviour:
         m_EditorAssetChanged: 1
       Rotation: 0
     ModelItem:
-      Model: {fileID: 6207598409899709787, guid: 6e5c272749465ce46896d2714189efa0, type: 3}
-      ModelReference:
+      _model: {fileID: 6207598409899709787, guid: 6e5c272749465ce46896d2714189efa0, type: 3}
+      _modelReference:
+        m_AssetGUID: 6e5c272749465ce46896d2714189efa0
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+      Scale: 0
+      Position: {x: 0, y: 0, z: 0}
+  - Id: 0
+    Title: 
+    PreviewTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    TGHTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    InteractiveMap:
+      Texture: {fileID: 2800000, guid: 3676a0b185daeb54fb257f700ba7ead4, type: 3}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 3676a0b185daeb54fb257f700ba7ead4
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    ModelItem:
+      _model: {fileID: 8621144769000116715, guid: 43def2bd0468e7140a19a41706a17f9d, type: 3}
+      _modelReference:
+        m_AssetGUID: 6e5c272749465ce46896d2714189efa0
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+      Scale: 0
+      Position: {x: 0, y: 0, z: 0}
+  - Id: 0
+    Title: 
+    PreviewTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    TGHTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    InteractiveMap:
+      Texture: {fileID: 2800000, guid: 3676a0b185daeb54fb257f700ba7ead4, type: 3}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 3676a0b185daeb54fb257f700ba7ead4
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    ModelItem:
+      _model: {fileID: 4059212446758351592, guid: b0680d0a5185185428591c3a9cd53d65, type: 3}
+      _modelReference:
+        m_AssetGUID: 6e5c272749465ce46896d2714189efa0
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+      Scale: 0
+      Position: {x: 0, y: 0, z: 0}
+  - Id: 0
+    Title: 
+    PreviewTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    TGHTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    InteractiveMap:
+      Texture: {fileID: 2800000, guid: 3676a0b185daeb54fb257f700ba7ead4, type: 3}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 3676a0b185daeb54fb257f700ba7ead4
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    ModelItem:
+      _model: {fileID: 7154899610612246161, guid: e1ea7c2b48be24e41a4a3b4ce83ded70, type: 3}
+      _modelReference:
+        m_AssetGUID: 6e5c272749465ce46896d2714189efa0
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+      Scale: 0
+      Position: {x: 0, y: 0, z: 0}
+  - Id: 0
+    Title: 
+    PreviewTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    TGHTexture:
+      Texture: {fileID: 0}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    InteractiveMap:
+      Texture: {fileID: 2800000, guid: 3676a0b185daeb54fb257f700ba7ead4, type: 3}
+      AssetReferenceTexture2D:
+        m_AssetGUID: 3676a0b185daeb54fb257f700ba7ead4
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 1
+      Rotation: 0
+    ModelItem:
+      _model: {fileID: 8621144769000116715, guid: 43def2bd0468e7140a19a41706a17f9d, type: 3}
+      _modelReference:
         m_AssetGUID: 6e5c272749465ce46896d2714189efa0
         m_SubObjectName: 
         m_SubObjectType: 

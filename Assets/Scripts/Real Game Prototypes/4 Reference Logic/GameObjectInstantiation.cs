@@ -13,7 +13,7 @@ public class GameObjectInstantiation : MonoBehaviour
     {
         for (int i = 0; i < _assetRefObjectData._setOfTileItems.Items.Count; i++)
         {
-            Instantiate(_assetRefObjectData._setOfTileItems.Items[i].ModelItem.Model, _pointsToInstantiate[UnityEngine.Random.Range(0, _pointsToInstantiate.Length)]);
+            Instantiate(_assetRefObjectData._setOfTileItems.Items[i].ModelItem.Model, _pointsToInstantiate[i]);
         }
 
     }

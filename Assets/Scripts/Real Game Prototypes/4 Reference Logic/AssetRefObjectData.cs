@@ -13,16 +13,17 @@ public class AssetRefObjectData : MonoBehaviour
     [SerializeField] public SetOfTileItems _setOfTileItems;
     [SerializeField] private int _index;
     [SerializeField] private bool _loadReference;
+    [SerializeField] private bool _convertContentToReference;
     private void Start()
     {
         /*GetAssetAddress();
 
 
-        MultipleConvertGameobjectToAssetReference();*/
+        
 
         /*MultipleConvertTextureToAssetReference();*/
 
-
+        if (_convertContentToReference) MultipleConvertGameobjectToAssetReference();
         if (_loadReference) LoadReference();
     }
 

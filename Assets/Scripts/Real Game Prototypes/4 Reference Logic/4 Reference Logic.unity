@@ -289,7 +289,8 @@ MonoBehaviour:
   _completedObj: []
   _setOfTileItems: {fileID: 11400000, guid: 0e31e308a9cfbb3449faebf560d84a2b, type: 2}
   _index: 2
-  _loadReference: 1
+  _loadReference: 0
+  _convertContentToReference: 0
 --- !u!1 &489451452
 GameObject:
   m_ObjectHideFlags: 0
