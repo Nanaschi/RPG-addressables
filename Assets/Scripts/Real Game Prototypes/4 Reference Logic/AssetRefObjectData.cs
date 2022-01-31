@@ -25,6 +25,7 @@ public class AssetRefObjectData : MonoBehaviour
 
         if (_convertContentToReference) MultipleConvertGameobjectToAssetReference();
         if (_loadReference) LoadReference();
+        print("");
     }
 
     private void LoadReference()
@@ -34,7 +35,7 @@ public class AssetRefObjectData : MonoBehaviour
             _references.Add(_setOfTileItems.Items[i].ModelItem.ModelReference);
         }
 
-        StartCoroutine(LoadAndWaitUntilComplete());
+        StartCoroutine(LoadAndWaitUntilCompleteAlt());
     }
     private IEnumerator LoadAndWaitUntilComplete()
     {
@@ -44,7 +45,7 @@ public class AssetRefObjectData : MonoBehaviour
     
     private IEnumerator LoadAndWaitUntilCompleteAlt()
     {
-        yield return AssetRefLoader.LoadAssetsAddToList(_references, _completedObj); //_references and _completedObj should have something in common
+        yield return AssetRefLoader.LoadAssetsAddToList2(_references, _completedObj); //_references and _completedObj should have something in common
     }
     
     
