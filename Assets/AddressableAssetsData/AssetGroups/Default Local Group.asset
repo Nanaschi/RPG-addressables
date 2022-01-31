@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: f85ac26865fee554ba526c16d805174d
   m_SerializeEntries:
   - m_GUID: e1ea7c2b48be24e41a4a3b4ce83ded70
-    m_Address: 1111
+    m_Address: Assets/Prefabs/Cube.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 6e5c272749465ce46896d2714189efa0
@@ -31,6 +31,18 @@ MonoBehaviour:
     m_SerializedLabels: []
   - m_GUID: 43def2bd0468e7140a19a41706a17f9d
     m_Address: Cube 3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5d9ba4e7d0964044ea54abe409d81dfd
+    m_Address: Assets/Content/RPG_inventory_icons/apple.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3676a0b185daeb54fb257f700ba7ead4
+    m_Address: Assets/Content/RPG_inventory_icons/coins.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e420c5bc93cb2604695a893500c897e3
+    m_Address: Assets/Content/RPG_inventory_icons/boots.png
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0
