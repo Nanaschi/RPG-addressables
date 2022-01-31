@@ -37,14 +37,13 @@ public class AssetRefObjectData : MonoBehaviour
         StartCoroutine(LoadAndWaitUntilComplete());
 
 
-        foreach (var reference in _references)
-        {
+       
             for (int i = 0; i < _setOfTileItems.Items.Count; i++)
             {
-                _setOfTileItems.Items[i].ModelItem.Model =  reference.editorAsset as GameObject;
-                Instantiate(_setOfTileItems.Items[i].ModelItem.Model);
+                _setOfTileItems.Items[i].ModelItem.Model =  _references[i].editorAsset as GameObject;
+                if (_setOfTileItems.Items[i].ModelItem.Model != null) Instantiate(_setOfTileItems.Items[i].ModelItem.Model);
             }
-        }
+        
 
         
     }
