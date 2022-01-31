@@ -1,4 +1,5 @@
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -43,9 +44,6 @@ public class AssetRefObjectData : MonoBehaviour
                 _setOfTileItems.Items[i].ModelItem.Model =  _references[i].editorAsset as GameObject;
                 if (_setOfTileItems.Items[i].ModelItem.Model != null) Instantiate(_setOfTileItems.Items[i].ModelItem.Model);
             }
-        
-
-        
     }
     private IEnumerator LoadAndWaitUntilComplete()
     {
@@ -57,18 +55,21 @@ public class AssetRefObjectData : MonoBehaviour
     {
         yield return AssetRefLoader.LoadAssetsAddToList2(_references, _completedObj); //_references and _completedObj should have something in common
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+    private void OnDestroy()
+    {
+        foreach (var reference in _references)
+        {
+            reference.ReleaseAsset();
+        }
+
+        for (int i = 0; i < _references.Count; i++)
+        {
+            _references[i].ReleaseInstance( _setOfTileItems.Items[i].ModelItem.Model);
+        }
+    }
+
 
     private void ConvertGameobjectToAssetReference()
     {

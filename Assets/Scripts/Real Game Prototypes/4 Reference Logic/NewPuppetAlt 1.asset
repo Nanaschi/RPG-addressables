@@ -40,7 +40,7 @@ MonoBehaviour:
         m_EditorAssetChanged: 1
       Rotation: 0
     ModelItem:
-      _model: {fileID: 0}
+      _model: {fileID: 8621144769000116715, guid: 43def2bd0468e7140a19a41706a17f9d, type: 3}
       _modelReference:
         m_AssetGUID: 43def2bd0468e7140a19a41706a17f9d
         m_SubObjectName: 
@@ -76,7 +76,7 @@ MonoBehaviour:
         m_EditorAssetChanged: 1
       Rotation: 0
     ModelItem:
-      _model: {fileID: 0}
+      _model: {fileID: 6207598409899709787, guid: 6e5c272749465ce46896d2714189efa0, type: 3}
       _modelReference:
         m_AssetGUID: 6e5c272749465ce46896d2714189efa0
         m_SubObjectName: 
@@ -114,7 +114,7 @@ MonoBehaviour:
     ModelItem:
       _model: {fileID: 0}
       _modelReference:
-        m_AssetGUID: 
+        m_AssetGUID: b0680d0a5185185428591c3a9cd53d65
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0
