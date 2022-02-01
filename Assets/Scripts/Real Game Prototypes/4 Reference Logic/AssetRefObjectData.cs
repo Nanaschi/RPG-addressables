@@ -42,7 +42,6 @@ public class AssetRefObjectData : MonoBehaviour
             for (int i = 0; i < _setOfTileItems.Items.Count; i++)
             {
                 _setOfTileItems.Items[i].ModelItem.Model =  _references[i].editorAsset as GameObject;
-                if (_setOfTileItems.Items[i].ModelItem.Model != null) Instantiate(_setOfTileItems.Items[i].ModelItem.Model);
             }
     }
     private IEnumerator LoadAndWaitUntilComplete()
