@@ -40,9 +40,9 @@ MonoBehaviour:
         m_EditorAssetChanged: 1
       Rotation: 0
     ModelItem:
-      _model: {fileID: 7154899610612246161, guid: e1ea7c2b48be24e41a4a3b4ce83ded70, type: 3}
+      _model: {fileID: 0}
       _modelReference:
-        m_AssetGUID: 
+        m_AssetGUID: 6e5c272749465ce46896d2714189efa0
         m_SubObjectName: 
         m_SubObjectType: 
         m_EditorAssetChanged: 0
