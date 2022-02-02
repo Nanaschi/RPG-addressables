@@ -574,6 +574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1610331862}
   - component: {fileID: 1610331863}
+  - component: {fileID: 1610331864}
   m_Layer: 0
   m_Name: Instantiating
   m_TagString: Untagged
@@ -620,7 +621,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _assetRefObjectData: {fileID: 485236465}
-  _objectIndex: 1
   _pointsToInstantiate:
   - {fileID: 391641858}
   - {fileID: 271405581}
@@ -634,6 +634,19 @@ MonoBehaviour:
   - {fileID: 923563624}
   - {fileID: 720093243}
   - {fileID: 911923777}
+  _localAssetLoader: {fileID: 1610331864}
+--- !u!114 &1610331864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610331861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6182e3ddf33f2f14c990938ed96549f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1736140708
 GameObject:
   m_ObjectHideFlags: 0

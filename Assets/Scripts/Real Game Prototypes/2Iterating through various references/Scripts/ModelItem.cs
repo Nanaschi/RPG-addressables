@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -13,37 +14,74 @@ public class ModelItem
 
     [SerializeField] private GameObject _model;
     [SerializeField] private AssetReference _modelReference;
+    public AssetReference ModelReference
+    {
+        get => _modelReference;
+        set => _modelReference = value;
+    }
+    
+    public async Task<GameObject> InstantiateObjectFromReference()
+    {
+
+    
+        var handle = Addressables.InstantiateAsync(_modelReference);
+        _model = await handle.Task;
+        return _model;
+    }
+    
+    
+    
+    public async Task<GameObject> GetObjectFromReference()
+    {
+        var handle = Addressables.LoadAssetAsync<GameObject>(_modelReference);
+        _model = await handle.Task;
+        return _model;
+    }
+    
+
     public GameObject Model
     {
         get
         {
-            if(string.IsNullOrEmpty(_modelReference.AssetGUID))
-            {
-                throw new NullReferenceException($"Model reference with Guid {_modelReference} is empty");
-            }
-            else
-            {
-                /*var obj =Addressables.InstantiateAsync(_modelReference);*/
-                AsyncOperationHandle handle = _modelReference.LoadAssetAsync<GameObject>();
-                handle.Completed += Handle_Completed;
-                return null;
-            }
+            Debug.Log("New get");
+            return null;
         }
-        set { Debug.Log("Setting Model"); _model = value; }
-    }
-    private void Handle_Completed(AsyncOperationHandle obj)
-    {
-        if (obj.Status == AsyncOperationStatus.Succeeded)
+
+        set
         {
-            _model = _modelReference.Asset as GameObject;
             
-            Debug.Log("Succeeded");
-        } 
-        else 
-        {
-            Debug.LogError($"AssetReference {_modelReference.RuntimeKey} failed to load.");
         }
     }
+    
+    
+    
+    /*
+    protected async Task<GameObject> LoadInternal(AssetReference assetReference)
+    {
+        var handle = Addressables.LoadSceneAsync(assetReference);
+        _model = await handle.Task;
+        /*if (_model == null)
+        {
+            throw new NullReferenceException($"{typeof(T)} not loaded");
+        }#1#
+
+        return _model;
+    }
+
+    public Task<GameObject> Load()
+    {
+        return LoadInternal(_modelReference);
+    }
+    */
+    
+    
+    
+    
+    
+    
+    
+    
+
 
 
     public GameObject ModelOld
@@ -63,12 +101,9 @@ public class ModelItem
 
     
 
-    public AssetReference EmptyAssetReference { get; }
-    public AssetReference ModelReference
-    {
-        get => _modelReference;
-        set => _modelReference = value;
-    }
+
+    
+    
     
     public GameObject ReferenceGameObject
     {
