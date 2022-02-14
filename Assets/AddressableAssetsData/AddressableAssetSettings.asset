@@ -62,9 +62,6 @@ MonoBehaviour:
         m_Value: 
       - m_Id: cbb1cf064bcae614ab1f47caa16cb8e6
         m_Value: 
-      - m_Id: 60716e450547d5b4d8b812912159f405
-        m_Value: D:/6 Unity Projects/9Testing/1 Addressables/Testing Addrs GB/RPG
-          Addressable/Assets
       - m_Id: 2de9aa791bfc99945a27d1c7c6feef2b
         m_Value: D:/6 Unity Projects/9Testing/1 Addressables/Testing Addrs GB/RPG
           Addressable/Assets
@@ -82,9 +79,6 @@ MonoBehaviour:
         m_Value: ServerData/[BuildTarget]
       - m_Id: cbb1cf064bcae614ab1f47caa16cb8e6
         m_Value: http://localhost/[BuildTarget]
-      - m_Id: 60716e450547d5b4d8b812912159f405
-        m_Value: D:/6 Unity Projects/9Testing/1 Addressables/Testing Addrs GB/RPG
-          Addressable/Assets
       - m_Id: 2de9aa791bfc99945a27d1c7c6feef2b
         m_Value: D:/6 Unity Projects/9Testing/1 Addressables/Testing Addrs GB/RPG
           Addressable/Assets
@@ -102,8 +96,6 @@ MonoBehaviour:
         m_Value: ServerData/[BuildTarget]
       - m_Id: cbb1cf064bcae614ab1f47caa16cb8e6
         m_Value: http://[PrivateIpAddress]:[HostingServicePort]
-      - m_Id: 60716e450547d5b4d8b812912159f405
-        m_Value: ServerData/[BuildTarget]
       - m_Id: 2de9aa791bfc99945a27d1c7c6feef2b
         m_Value: http://[PrivateIpAddress]:[HostingServicePort]
     - m_InheritedParent: 
@@ -120,10 +112,42 @@ MonoBehaviour:
         m_Value: ServerData/[BuildTarget]
       - m_Id: cbb1cf064bcae614ab1f47caa16cb8e6
         m_Value: http://[Error]:[HostingServicePort]
-      - m_Id: 60716e450547d5b4d8b812912159f405
-        m_Value: ServerData/[BuildTarget]
       - m_Id: 2de9aa791bfc99945a27d1c7c6feef2b
         m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+    - m_InheritedParent: 
+      m_Id: 165d94719167ccd4c8f6d3d1c30715b3
+      m_ProfileName: New Profile1
+      m_Values:
+      - m_Id: 7fe38524f4ab0c442836b7e20d895fa2
+        m_Value: 
+      - m_Id: 7963e4ca01f0a9841a6dc7b9b1ecfcf4
+        m_Value: 
+      - m_Id: 94818c9e7468ff64ca4c08527dfa2d7a
+        m_Value: 
+      - m_Id: bbf590299b0b4584ea8f480feeae558e
+        m_Value: 
+      - m_Id: cbb1cf064bcae614ab1f47caa16cb8e6
+        m_Value: 
+      - m_Id: 2de9aa791bfc99945a27d1c7c6feef2b
+        m_Value: D:/6 Unity Projects/9Testing/1 Addressables/Testing Addrs GB/RPG
+          Addressable/Assets
+    - m_InheritedParent: 
+      m_Id: 58819d759182bda44aeaa4d53371e13d
+      m_ProfileName: Iconic
+      m_Values:
+      - m_Id: 7fe38524f4ab0c442836b7e20d895fa2
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 7963e4ca01f0a9841a6dc7b9b1ecfcf4
+        m_Value: '[UnityEngine.Application.dataPath]/Exported'
+      - m_Id: 94818c9e7468ff64ca4c08527dfa2d7a
+        m_Value: '{UnityEngine.Application.dataPath}/Resources/Mods'
+      - m_Id: bbf590299b0b4584ea8f480feeae558e
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: cbb1cf064bcae614ab1f47caa16cb8e6
+        m_Value: http://localhost/[BuildTarget]
+      - m_Id: 2de9aa791bfc99945a27d1c7c6feef2b
+        m_Value: D:/6 Unity Projects/9Testing/1 Addressables/Testing Addrs GB/RPG
+          Addressable/Assets
     m_ProfileEntryNames:
     - m_Id: 7fe38524f4ab0c442836b7e20d895fa2
       m_Name: BuildTarget
@@ -139,9 +163,6 @@ MonoBehaviour:
       m_InlineUsage: 0
     - m_Id: cbb1cf064bcae614ab1f47caa16cb8e6
       m_Name: RemoteLoadPath
-      m_InlineUsage: 0
-    - m_Id: 60716e450547d5b4d8b812912159f405
-      m_Name: New Entry.BuildPath
       m_InlineUsage: 0
     - m_Id: 2de9aa791bfc99945a27d1c7c6feef2b
       m_Name: New Entry.LoadPath
@@ -167,7 +188,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1dc26bdd113a7e146b8615cbf13ef5f6, type: 2}
   - {fileID: 11400000, guid: d08366d71d96cc44fafbd54ebddacdfa, type: 2}
   - {fileID: 11400000, guid: 2ac791be4ed7a484a991576af4d8962a, type: 2}
-  m_ActiveProfileId: a7a89563c089d1c408ddf531cf92b00b
+  m_ActiveProfileId: 2f28956401580cd48bd723c99a8378ae
   m_HostingServicesManager:
     m_HostingServiceInfos:
     - classRef: UnityEditor.AddressableAssets.HostingServices.HttpHostingService,

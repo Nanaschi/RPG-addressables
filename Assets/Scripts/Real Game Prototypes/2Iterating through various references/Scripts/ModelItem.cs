@@ -24,7 +24,6 @@ public class ModelItem
     
     public async Task<GameObject> GetObjectFromReference() 
     {
-        /*if (string.IsNullOrEmpty(contentAssetReference.AssetGUID)) Debug.LogError("AssetGUID of the referenced AssetReference is empty/ not assigned");*/
         AsyncOperationHandle = Addressables.LoadAssetAsync<GameObject>(_modelReference);
         var cachedModel = await AsyncOperationHandle.Task;
         return cachedModel;
