@@ -11,32 +11,103 @@ using Object = UnityEngine.Object;
 public class ModelItem
 {
 
-
-    [SerializeField] private GameObject _model;
+    [SerializeField] public GameObject ContentModel;
+    
     [SerializeField] private AssetReference _modelReference;
+    public AsyncOperationHandle<GameObject> AsyncOperationHandle { get; set; }
     public AssetReference ModelReference
     {
         get => _modelReference;
         set => _modelReference = value;
     }
     
+    
+    public async Task<GameObject> GetObjectFromReference() 
+    {
+        /*if (string.IsNullOrEmpty(contentAssetReference.AssetGUID)) Debug.LogError("AssetGUID of the referenced AssetReference is empty/ not assigned");*/
+        AsyncOperationHandle = Addressables.LoadAssetAsync<GameObject>(_modelReference);
+        var cachedModel = await AsyncOperationHandle.Task;
+        return cachedModel;
+    }
+    
     public async Task<GameObject> InstantiateObjectFromReference()
     {
-
-    
         var handle = Addressables.InstantiateAsync(_modelReference);
-        _model = await handle.Task;
+        var _model = await handle.Task;
         return _model;
+    }
+    
+    public void ReleaseInstantiateObjectFromReference()
+    {
+        var handle = Addressables.ReleaseInstance(InstantiateObjectFromReference().Result);
     }
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*
     public async Task<GameObject> GetObjectFromReference()
     {
+        if (string.IsNullOrEmpty(_modelReference.AssetGUID)) Debug.LogError("AssetGUID of the referenced GameObject is null");
         var handle = Addressables.LoadAssetAsync<GameObject>(_modelReference);
-        _model = await handle.Task;
-        return _model;
+        var cachedModel = await handle.Task;
+        return cachedModel;
     }
+
+    
+
+    */
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 
     public GameObject Model
@@ -80,42 +151,23 @@ public class ModelItem
     
     
     
-    
-
-
-
-    public GameObject ModelOld
-    {
-        get
-        {
-
-            return _model;
-        }
-        set
-        { 
-
-        }
-        
-  
-    }
-
-    
 
 
     
     
     
-    public GameObject ReferenceGameObject
+    /*public System.Object ReferenceGameObject
     {
         get => _modelReference.Asset as GameObject;
         set => value = _modelReference.Asset as GameObject;
-    }
+    }*/
 
 
     public int Rotation;
     public float Scale = 1;
     public Vector3 Position;
     
+    /*
     public GameObject ModelAlt
     {
         get
@@ -131,6 +183,7 @@ public class ModelItem
         
   
     }   
+    */
     
     
 
